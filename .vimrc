@@ -1,5 +1,5 @@
-execute pathogen#infect()
-
+" ===============
+" Vundle settings 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -11,11 +11,16 @@ call vundle#begin()
 
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'itchyny/landscape.vim'
-" All of your Plugins must be added before the following line
+Plugin 'scrooloose/nerdtree'
+" All of your Plugins must be aded before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+" Vundle settings 
+" ===============
 
+
+" ===============
+" Editor settings
 set nocompatible " 오리지날 VI와 호환하지 않음
 set autoindent  " 자동 들여쓰기
 set cindent " C 프로그래밍용 자동 들여쓰기
@@ -42,3 +47,11 @@ set background=dark " 하이라이팅 lihgt / dark
 colorscheme desert  "  vi 색상 테마 설정
 set backspace=eol,start,indent "  줄의 끝, 시작, 들여쓰기에서 백스페이스시 이전줄로
 set history=1000 "  vi 편집기록 기억갯수 .viminfo에 기록
+" Editor settings
+" ===============
+
+" ===============
+" Shortcuts
+map <f1> :NERDTreeToggle<CR>
+
+" ===============
